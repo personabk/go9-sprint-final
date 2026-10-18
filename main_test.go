@@ -61,8 +61,8 @@ func TestMaximum(t *testing.T) {
 	}
 }
 func TestMaxChunks(t *testing.T) {
-	// Генерируем небольшой слайс для теста (не нужно 100 млн, хватит 1000)
-	data := generateRandomElements(1000)
+	// Генерируем небольшой слайс для теста
+	data := generateRandomElements(1000000000)
 
 	// Считаем максимум "эталонным" однопоточным способом
 	expected := maximum(data)
